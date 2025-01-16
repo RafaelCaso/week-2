@@ -15,6 +15,8 @@ using as the information the github repo that you will use to develop this proje
 
 that repo needs to be a fork of this one
 
+(https://github.com/weeklyhackathon/week-2)[https://github.com/weeklyhackathon/week-2]
+
 but that being done on thursday 16 of january at 23:59 UTC 
 
 ------------
