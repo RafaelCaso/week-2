@@ -1,28 +1,65 @@
-# week-2
-this is the official guideline for week 2 of $hackathon
+# 🤖 Weekly Hackathon: Week Two
 
-your mission is to create a cluster of ai agents. they can be N, but N needs to be bigger or equal to three
+This is the official instructions repository for Week Two of $hackathon. 
 
-you don't need any fancy setup. only an mvp. the collective mission of those agents is to coordinate to choose their pick for the 8 finalists of this week
+Your mission is to build a cluster of AI agents that can collectively judge and select the best hackathon projects.
 
-this week being week 2
+## 🎯 Challenge Overview
 
-so the mission of the agents is to judge themselves to understand who are the 8 better pieces of code for that specific task:
+Create a system of three or more AI agents that work together to evaluate and select the top 8 finalists from the weekly hackathon submissions. These agents should coordinate and communicate with each other to make informed decisions about project quality and potential.
 
-choosing the 8 best projects of this week
+The winning algorithm will be used by all $hackathon holders to vote during the official voting period.
 
-and those 8 better ones one will be the one that we will use as the algorithm that all of the holders of $hackathon will vote for on the voting period
+## 📋 Requirements
 
-starting next thursday 23 at 23:59 UTC
+- Minimum of 3 AI agents in the cluster
+- Agents must coordinate to select 8 finalists
+- MVP (Minimum Viable Product) approach - focus on core functionality
+- Must be a fork of this repository
+- Must use an open source license allowing reuse and modification for any purpose
 
-to develop this project and for it to be valid for $hackathon week-2, it needs to be open source[1]
+## 🔍 Agent Guidelines
 
-and that repo needs to be a fork of this one (the one where you are reading these words)
+Your AI agent cluster should:
+- Have a clear decision-making process
+- Demonstrate effective inter-agent communication
+- Use defined criteria for project evaluation
+- Reach consensus on finalist selection
+- Document their methodology and reasoning
 
-(https://github.com/weeklyhackathon/week-2)[https://github.com/weeklyhackathon/week-2]
+## 📝 Submission Guidelines and Process
 
-but that being done on thursday 16 of january at 23:59 UTC 
+1. Fork this repository (don't just clone it!)
+2. Clone your forked repository and add your code to it
+3. Build your AI agent cluster
+4. Document your approach and how the agents work together
+5. Test your system thoroughly
+6. Submit your project before the deadline
+7. Ensure all code and documentation is complete
 
-------------
+## 🏆 Judging Process
 
-[1] Must use an open source license allowing reuse and modification for any purpose
+The submitted AI agent clusters will be evaluated based on:
+- Effectiveness of coordination between agents
+- Clarity of decision-making process
+- Code quality and documentation
+- Scalability and robustness
+- Innovation in approach
+
+## ⏰ Timeline
+
+- Submission Deadline: January 16, 2024, 23:59 UTC
+- Voting Period Starts: January 23, 2024, 23:59 UTC
+
+## ❓ Questions?
+
+- DM [@jpfraneto](https://warpcast.com/~/inbox/create/16098?text=gm) on Warpcast
+- Check the [official challenge page](https://weeklyhackathon.com/week-two)
+
+## 📜 License
+
+Must use an open source license allowing reuse and modification for any purpose.
+
+---
+
+Good luck! 🤖
