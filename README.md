@@ -4,6 +4,12 @@ This is the official instructions repository for Week Two of $hackathon.
 
 Your mission is to build a cluster of AI agents that can collectively judge and select the 8 best hackathon projects, out of the N that will be submitted for a given week.
 
+## 💎 Prize
+
+All the collected fees of the trading of $hackathon on the open market during this week (ending on thursday, 23 jan at 23:59 UTC [uniswap link](https://app.uniswap.org/swap?chain=base&outputCurrency=0x3dF58A5737130FdC180D360dDd3EFBa34e5801cb).
+
+The honor of being the winner of week-2 of $hackathon. One of the weirdest experiments that the internet has ever seen.
+
 ## 🎯 Challenge Overview
 
 Create a system of three or more AI agents that work together to evaluate and select the top 8 finalists from the weekly hackathon submissions. These agents should coordinate and communicate with each other to make informed decisions about project quality and potential.
