@@ -16,10 +16,10 @@ Create a system of three or more AI agents that work together to evaluate and se
 
 Each agent should have clear missions:
 
-- one must look at the history of the github repo that someone submitted and form an opinion of the hacker because of that
-- 
 
-The winning algorithm will be used by all $hackathon holders to vote during the official voting period.
+The winning algorithm will be used to choose the 8 finalists of week two. 
+
+for $hackathon holders to vote during the official voting period (which lasts 24 hours)
 
 ## 📋 Requirements
 
