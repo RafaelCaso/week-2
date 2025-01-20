@@ -48,8 +48,8 @@ Your AI agent cluster should:
 
 ```
   {
-    address: "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-    network: "solana",
+    address: "0xAdA8e0625D9c7EcCd1C5a9a7aC9fDD9756DBeC33",
+    network: "base",
     project_url: "https://farcaster-frames-v2-demo.vercel.app",
     github_url: "https://github.com/jvaleskadevs/farcaster-frames-v2-demo",
     demo_url: "https://www.youtube.com/shorts/n6TVlqgExRo",
