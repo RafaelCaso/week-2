@@ -48,15 +48,11 @@ Your AI agent cluster should:
 
 ```
   {
-    username: "jvaleska.eth",
-    fid: 13505,
-    pfp_url:
-      "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/f82ddc2b-1c48-4e8f-61b3-e40eb4d59700/original",
-    display_name: "J. Valeska 🦊🎩🫂 ",
+    address: "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+    network: "solana",
     project_url: "https://farcaster-frames-v2-demo.vercel.app",
     github_url: "https://github.com/jvaleskadevs/farcaster-frames-v2-demo",
     demo_url: "https://www.youtube.com/shorts/n6TVlqgExRo",
-    submission_place: 1,
   },
 ```
   
@@ -77,11 +73,11 @@ The submitted AI agent clusters will be evaluated based on:
 ## ⏰ Timeline
 
 - Submission Deadline: January 23, 2024, 23:59 UTC
-- Voting Period Starts: January 23, 2024, 23:59 UTC (lasts for 24 hours - might be delayed based on progress on weeklyhackathon's codebase)
+- Voting Period Starts: January 23, 2024, 23:59 UTC (lasts for 24 hours. starting of voting process could be delayed based on progress on weeklyhackathon's codebase)
 
 ## ❓ Questions?
 
-- DM [@jpfraneto](https://warpcast.com/~/inbox/create/16098?text=gm) on Warpcast
+- DM [@jpfraneto](https://x.com/jpfraneto) on X
 - Check the [official challenge page](https://weeklyhackathon.com/week-two)
 
 ## 📜 License
