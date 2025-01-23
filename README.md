@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Agent Evaluation System
 
-## Getting Started
+## 🤖 Agent Methodology
 
-First, run the development server:
+The evaluation system employs 3 agents that each have a specific area of expertise. These agents are then managed by a 4th, coordinator agent, that facilitates discussion and creates a consensus. This design ensures comprehensive project evaluation across technical, creative, and ecosystem dimensions while maintaining balanced and well-reasoned assessments. All agents have been designed to be encouraging and never disparaging. They are honest and direct, but these aspects of their personality may need to be adjusted if honest feedback suffers as a result.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🏗️ Agent Architecture
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 1. 👨‍💻 Technical Agent (Mervin)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Role**: Senior Software Engineer
+- **Experience**: 20+ years in software development
+- **Focus Areas**:
+  - Code quality and engineering practices
+  - System architecture and scalability
+  - Testing and error handling
+  - Documentation quality
+  - Technical innovation
+- **Evaluation Style**: Direct but constructive, emphasizing software craftsmanship while remaining encouraging
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### 2. 🎨 Innovation Agent (Gertrude)
 
-## Learn More
+- **Role**: Product Designer & Innovation Expert
+- **Focus Areas**:
+  - Originality and uniqueness
+  - User experience and interface design
+  - Problem-solving creativity
+  - Market potential
+  - Overall project vision
+- **Evaluation Style**: Enthusiastic and encouraging, with understanding of technical constraints
 
-To learn more about Next.js, take a look at the following resources:
+#### 3. 🌐 Ecosystem Agent (Vitalik)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Role**: Blockchain Ecosystem Expert
+- **Focus Areas**:
+  - Integration with existing ecosystem
+  - Community value and impact
+  - Decentralization principles
+  - Network effects
+  - Long-term sustainability
+- **Evaluation Style**: Analytical with focus on practical adoption
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### 4. 🎯 Agent Coordinator
 
-## Deploy on Vercel
+- **Role**: Discussion Facilitator
+- **Responsibilities**:
+  - Orchestrating evaluation process
+  - Identifying points of agreement/disagreement
+  - Weighing different perspectives
+  - Finding balance between technical, creative, and ecosystem considerations
+  - Reaching consensus on final rankings
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📊 Evaluation Process
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Individual Assessments**
+
+   - Each agent independently evaluates projects within their domain expertise
+   - Agents provide scores from 0 to 100 as well as giving detailed feedback
+   - Feedback includes specific strengths and areas for improvement
+
+2. **Consensus Building**
+
+   - Coordinator facilitates discussion between agents
+   - Analyzes individual evaluations for patterns
+   - Identifies key points of agreement and conflict
+   - Guides towards balanced consensus
+
+3. **Final Scoring**
+   - Synthesizes perspectives into unified assessment
+   - Generates consensus score
+   - Provides detailed reasoning for final score
+   - Lists unified strengths and improvement areas
+   - Ranks projects based on consensus scores
+
+## 💯 Scoring Criteria
+
+Each agent evaluates projects on a 0-100 scale within their expertise:
+
+### 💻 Technical Excellence (Mervin)
+
+- Code quality and organization
+- Architecture decisions
+- Testing coverage
+- Technical documentation
+- Implementation innovation
+
+### 💡 Innovation Impact (Gertrude)
+
+- Solution originality
+- User experience design
+- Visual presentation
+- Problem-solving approach
+- Market viability
+
+### 🌍 Ecosystem Value (Vitalik)
+
+- Ecosystem integration
+- Community benefit
+- Decentralization implementation
+- Network effect potential
+- Long-term sustainability
+
+## 📋 Output Format
+
+The system produces structured evaluation results including:
+
+- Individual agent scores and feedback
+- Consensus score with reasoning
+- Unified list of strengths
+- Unified list of improvement areas
+- Overall ranking among submissions
+- Narrative explanation of top picks
+
+## ⚙️ Implementation Notes
+
+- Uses GPT-4 for agent intelligence
+- Implements strict JSON response formatting
+- Maintains consistent evaluation criteria
+- Ensures reproducible scoring methodology
+- Provides detailed feedback for improvement
