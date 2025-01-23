@@ -2,8 +2,6 @@ import { type NextRequest } from "next/server";
 
 export async function POST(req: NextRequest) {
   const data = await req.json();
-  // Handle the final project submission
-  // Store in your database, etc.
 
   return new Response(
     `<!DOCTYPE html>

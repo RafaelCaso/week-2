@@ -1,9 +1,7 @@
 import { BaseAgent } from "./base-agent";
 import { Project, Evaluation } from "./types";
-import OpenAI from "openai";
 
 export class EcosystemAgent extends BaseAgent {
-  protected client!: OpenAI;
   protected systemPrompt: string;
 
   constructor() {

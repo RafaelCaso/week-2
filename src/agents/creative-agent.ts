@@ -1,6 +1,5 @@
 import { BaseAgent } from "./base-agent";
 import { Project, Evaluation } from "./types";
-import OpenAI from "openai";
 
 export class CreativeAgent extends BaseAgent {
   protected systemPrompt: string;
