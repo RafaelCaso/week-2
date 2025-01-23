@@ -10,6 +10,7 @@ export default function Home() {
   const [evaluationResults, setEvaluationResults] = useState<ConsensusResult[]>(
     []
   );
+  const [explanation, setExplanation] = useState<string>("");
   const [formData, setFormData] = useState<Omit<Project, "submission_time">>({
     address: "",
     network: "",
@@ -71,6 +72,8 @@ export default function Home() {
       if (!response.ok) throw new Error(results.error);
 
       setEvaluationResults(results);
+      setExplanation(explanation);
+
       document
         .getElementById("results")
         ?.scrollIntoView({ behavior: "smooth" });
@@ -218,6 +221,12 @@ export default function Home() {
       {evaluationResults.length > 0 && (
         <div id="results" className="mt-12">
           <h2 className="text-2xl font-bold mb-6">Evaluation Results</h2>
+
+          <div className="mb-8 p-6 bg-blue-50 rounded-lg border border-blue-100">
+            <h3 className="text-xl font-semibold mb-3">Summary</h3>
+            <p className="text-gray-700 whitespace-pre-line">{explanation}</p>
+          </div>
+
           <div className="space-y-6">
             {evaluationResults.map((result) => (
               <div

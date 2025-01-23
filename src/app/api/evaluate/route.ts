@@ -6,9 +6,9 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-export async function POST(req: Request) {
+export async function POST(_req: Request) {
   try {
-    const submissions = await req.json();
+    const submissions = await _req.json();
     const coordinator = new AgentCoordinator();
     coordinator.setClient(openai);
 
