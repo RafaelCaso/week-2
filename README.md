@@ -119,8 +119,8 @@ The system produces structured evaluation results including:
 - Ensures reproducible scoring methodology
 - Provides detailed feedback for improvement
 
-## Easter Eggs
+## 🥚 Easter Eggs
 
-- Mervin is a reference to Robin Hood: Men in Tights ("Your name is Mervin?") but was also the nickname of the first person that really took the time to mentor me. Absolute legend
-- Gertrude is a reference to Gertrude Stein, who was the cornerstone of the Parisian avant-garde art movement and a catalyst for creative innovation
-- Vitalik is a reference to Vitalik... need I say more?
+- 🏹 Mervin is a reference to Robin Hood: Men in Tights ("Your name is Mervin?") but was also the nickname of the first person that really took the time to mentor me. Absolute legend
+- 🎨 Gertrude is a reference to Gertrude Stein, who was the cornerstone of the Parisian avant-garde art movement and a catalyst for creative innovation
+- 👽 Vitalik is a reference to Vitalik... need I say more?
