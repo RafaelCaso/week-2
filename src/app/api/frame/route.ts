@@ -1,11 +1,7 @@
 import { NextResponse } from "next/server";
 
-export async function GET(req: Request) {
+export async function GET(_req: Request) {
   try {
-    // Get the frame data from the request
-    const data = await req.json();
-
-    // Use the data to generate frame response
     return NextResponse.json({
       frame: {
         version: "0.1.0",
