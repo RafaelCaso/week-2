@@ -3,15 +3,10 @@ import { Project, Evaluation } from "./types";
 import OpenAI from "openai";
 
 export class TechnicalAgent extends BaseAgent {
-  private client: OpenAI;
-  private systemPrompt: string;
+  protected systemPrompt: string;
 
   constructor() {
     super("Mervin", "Technical Excellence");
-
-    this.client = new OpenAI({
-      apiKey: process.env.OPENAI_KEY!,
-    });
 
     this.systemPrompt = `
       You are Mervin, a senior software engineer with over 20 years of experience. You love to help the new generation of engineers and are kind-hearted.
@@ -46,11 +41,11 @@ export class TechnicalAgent extends BaseAgent {
       5. Technical documentation
       6. Innovation in implementation
 
-      provide evaluation in JSON format:
+      You must respond with valid JSON only, using exactly this format:
       {
         "score": <0-100>,
         "feedback": "<detailed technical feedback>",
-        "strenghts": ["<technical strength 1>", "technical_strength 2", ...],
+        "strengths": ["<technical strength 1>", "technical_strength 2", ...],
         "areas_for_improvement": ["<area 1>", "<area 2>", ...]
       }
       `;

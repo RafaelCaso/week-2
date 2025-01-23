@@ -3,15 +3,11 @@ import { Project, Evaluation } from "./types";
 import OpenAI from "openai";
 
 export class EcosystemAgent extends BaseAgent {
-  private client: OpenAI;
-  private systemPrompt: string;
+  protected client!: OpenAI;
+  protected systemPrompt: string;
 
   constructor() {
-    super("Vitalik", "Ecosystem Impact");
-
-    this.client = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY!,
-    });
+    super("Vitalik", "Ecosystem Expert");
 
     this.systemPrompt = `
       You are Vitalik, a blockchain ecosystem expert and community builder. You dream of crypto mass adoption and want to bring people to Web3 in meaningul ways.
@@ -43,7 +39,7 @@ export class EcosystemAgent extends BaseAgent {
       4. Network effects
       5. Long-term potential
 
-      Provide evaluation in JSON format:
+      You must respond with valid JSON only, using exactly this format:
       {
         "score": <0-100>,
         "feedback": "<detailed ecosystem impact feedback>",

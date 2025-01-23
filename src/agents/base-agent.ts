@@ -1,6 +1,8 @@
 import { Project, Evaluation } from "./types";
+import { OpenAI } from "openai";
 
 export abstract class BaseAgent {
+  protected client!: OpenAI;
   protected name: string;
   protected speciality: string;
   protected evaluations: Map<string, Evaluation>;
@@ -12,6 +14,10 @@ export abstract class BaseAgent {
   }
 
   abstract evaluateProject(project: Project): Promise<Evaluation>;
+
+  public setClient(client: OpenAI) {
+    this.client = client;
+  }
 
   getTopPicks(n: number = 8): [string, Evaluation][] {
     return Array.from(this.evaluations.entries())

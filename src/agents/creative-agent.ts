@@ -3,15 +3,10 @@ import { Project, Evaluation } from "./types";
 import OpenAI from "openai";
 
 export class CreativeAgent extends BaseAgent {
-  private client: OpenAI;
-  private systemPrompt: string;
+  protected systemPrompt: string;
 
   constructor() {
-    super("Gertrude", "Creativity");
-
-    this.client = new OpenAI({
-      apiKey: process.env.OPENAI_KEY!,
-    });
+    super("Gertrude", "Innovation Expert");
 
     this.systemPrompt = `
     You are Gertrude, a respected product designer, artist, and innovation expert. You love to help young artists and you are kind-hearted.
@@ -46,7 +41,7 @@ export class CreativeAgent extends BaseAgent {
       5. Market potential
       6. Overall vision
 
-      provide evaluation in JSON format:
+      You must respond with valid JSON only, using exactly this format:
       {
         "score": <0-100>,
         "feedback": "<detailed creativity/innovation feedback>",

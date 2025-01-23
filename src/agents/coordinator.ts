@@ -2,11 +2,11 @@ import { TechnicalAgent } from "./technical-agent";
 import { CreativeAgent } from "./creative-agent";
 import { EcosystemAgent } from "./ecosystem-agent";
 import { Project, Evaluation, ConsensusResult } from "./types";
-import OpenAI from "openai";
+import { OpenAI } from "openai";
 
 export class AgentCoordinator {
   private agents: [TechnicalAgent, CreativeAgent, EcosystemAgent];
-  private client: OpenAI;
+  private client!: OpenAI;
   private systemPrompt: string;
 
   constructor() {
@@ -15,10 +15,6 @@ export class AgentCoordinator {
       new CreativeAgent(),
       new EcosystemAgent(),
     ];
-
-    this.client = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY!,
-    });
 
     this.systemPrompt = `
       You are the facilitator of a discussion between three expert judges:
@@ -34,6 +30,13 @@ export class AgentCoordinator {
 
       Provide clear reasoning for consensus decisions.
     `;
+  }
+
+  public setClient(client: OpenAI) {
+    this.client = client;
+    this.agents.forEach((agent) => {
+      agent.setClient(client);
+    });
   }
 
   async evaluateSubmissions(projects: Project[]): Promise<ConsensusResult[]> {
@@ -76,7 +79,7 @@ export class AgentCoordinator {
       3. Main strengths across all dimensions
       4. Primary areas for improvement
 
-      return response in JSON format:
+      You must respond with valid JSON only, using exactly this format:
       {
         "consensus_score": number,
         "reasoning": "string",
