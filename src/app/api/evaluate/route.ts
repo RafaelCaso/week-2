@@ -6,9 +6,16 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-export async function POST(_req: Request) {
+export async function POST(req: Request) {
+  if (!process.env.OPENAI_API_KEY) {
+    return NextResponse.json(
+      { error: "OpenAI API key not configured" },
+      { status: 500 }
+    );
+  }
+
   try {
-    const submissions = await _req.json();
+    const submissions = await req.json();
     const coordinator = new AgentCoordinator();
     coordinator.setClient(openai);
 
